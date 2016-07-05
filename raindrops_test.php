@@ -51,7 +51,6 @@ class RaindropsTest extends PHPUnit_Framework_TestCase
 
     public function test25()
     {
-        $this->markTestSkipped();
         $this->assertSame("Plang", raindrops(25));
     }
 
