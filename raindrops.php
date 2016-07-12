@@ -1,13 +1,15 @@
 <?php
 
-//
-// This is only a SKELETON file for the "Hamming" exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
 
-function raindrops($num)
-{
-    //
-    // YOUR CODE GOES HERE
-    //
+
+function raindrops($num){
+  $raindrops = [3 => 'Pling', 5 => 'Plang', 7 => 'Plong'];
+    $response = '';
+    foreach ($raindrops as $factor => $raindrop) {
+        if ($num % $factor == 0) {
+            $response .= $raindrop;
+        }
+}
+
+    return $response ?: (string) $num;
 }
